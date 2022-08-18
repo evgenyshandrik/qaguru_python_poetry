@@ -1,0 +1,21 @@
+[tool.pytest.ini_options]
+minversion = "2.0"
+addopts = "-rfEX -p pytester --strict-markers"
+
+[tool.poetry]
+name = "poetry"
+version = "0.1.0"
+description = ""
+authors = ["Evgeny Shandrik <shandryk.e@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+pytest = "^7.1.2"
+selene = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.14.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
